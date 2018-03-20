@@ -1,0 +1,3 @@
+/home/ruslan/projects/snowgoose/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ruslan/projects/snowgoose/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ruslan/projects/snowgoose/cmake-build-debug/CMakeFiles/snowgoose.dir

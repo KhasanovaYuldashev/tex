@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="snowgoose"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/ruslan/projects/snowgoose/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/ruslan/projects/snowgoose/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/ruslan/projects/snowgoose/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="snowgoose">
+				<Option output="/home/ruslan/projects/snowgoose/cmake-build-debug/snowgoose" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ruslan/projects/snowgoose/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 snowgoose"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="snowgoose/fast">
+				<Option output="/home/ruslan/projects/snowgoose/cmake-build-debug/snowgoose" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/ruslan/projects/snowgoose/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 snowgoose/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/ruslan/projects/snowgoose/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/ruslan/projects/snowgoose/box/box.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/box/boxutils.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/common/fileutils.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/common/interval.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/common/projecttosimplex.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/common/sgerrcheck.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/common/smartptr.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/common/testprojecttosimplex.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/common/utilmacro.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/common/vec.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/derivatives/grad.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/derivatives/helpfunc.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/derivatives/intervalder.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/derivatives/testderivative.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/derivatives/valder.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/expression/algder.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/expression/algorithm.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/expression/expr.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/expression/node.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/expression/testexpr.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/expression/utils.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/interval/enums.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/interval/interval_air.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/interval/testinterval.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/JSONOptions.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Dependencies/libbase64++/libbase64++.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Dependencies/mempool++/mempool.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONAllocator.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONAllocator.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONChildren.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONChildren.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONDebug.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONDebug.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONDefs.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONDefs/GNU_C.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONDefs/Strings_Defs.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONDefs/Unknown_C.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONDefs/Visual_C.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONGlobals.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONIterators.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONMemory.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONMemory.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONMemoryPool.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONNode.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONNode.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONNode_Mutex.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONPreparse.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONPreparse.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONSharedString.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONSingleton.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONStats.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONStream.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONStream.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONValidator.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONValidator.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONWorker.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONWorker.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSONWriter.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/JSON_Base64.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/NumberToString.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/internalJSONNode.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/internalJSONNode.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/Source/libjson.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/All/main.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/Benchmark/main.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/RunTestSuite2.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/RunTestSuite2.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/StringTest.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestAssign.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestBinary.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestChildren.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestComments.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestConverters.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestCtors.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestEquality.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestFunctions.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestInequality.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestInspectors.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestIterators.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestMutex.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestNamespace.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestRefCounting.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestSharedString.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestStreams.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestString.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestSuite.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestSuite.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestValidator.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/TestWriter.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/UStringTest.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/UnitTest.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/UnitTest.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite/main.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/BaseTest.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONDebug/JSON_ASSERT.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONDebug/JSON_ASSERT.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONDebug/JSON_ASSERT_SAFE.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONDebug/JSON_ASSERT_SAFE.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONDebug/JSON_FAIL.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONDebug/JSON_FAIL.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONDebug/JSON_FAIL_SAFE.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONDebug/JSON_FAIL_SAFE.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONGlobals/jsonSingleton.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONGlobals/jsonSingleton.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/Resources/validyMacros.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/isValidArray.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/isValidArray.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/isValidMember.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/isValidMember.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/isValidNamedObject.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/isValidNamedObject.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/isValidNumber.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/isValidNumber.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/isValidObject.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/isValidObject.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/isValidPartialRoot.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/isValidPartialRoot.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/isValidRoot.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/isValidRoot.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/isValidString.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/isValidString.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/securityTest.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSONValidator/securityTest.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSON_Base64/json_decode64.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSON_Base64/json_decode64.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSON_Base64/json_encode64.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/JSON_Base64/json_encode64.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/NumberToString/_areFloatsEqual.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/NumberToString/_areFloatsEqual.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/NumberToString/_atof.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/NumberToString/_atof.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/NumberToString/_ftoa.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/NumberToString/_ftoa.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/NumberToString/_itoa.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/NumberToString/_itoa.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/NumberToString/_uitoa.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/NumberToString/_uitoa.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/NumberToString/getLenSize.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/NumberToString/getLenSize.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/NumberToString/isNumeric.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/_internal/TestSuite2/NumberToString/isNumeric.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/libjson/libjson.h">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/pointgen/pointgenerator.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/pointgen/randpointgen.hpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/pointgen/testrandpointgen.cpp">
+			<Option target="snowgoose"/>
+		</Unit>
+		<Unit filename="/home/ruslan/projects/snowgoose/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

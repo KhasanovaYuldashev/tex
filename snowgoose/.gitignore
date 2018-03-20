@@ -1,0 +1,15 @@
+#bin files
+*.a
+*.o
+*.exe
+interval/Ext
+
+#temporary files
+deps.inc
+*.cache
+*~
+
+#netbeans files
+nbproject/
+Makefile-bnb.mk
+
