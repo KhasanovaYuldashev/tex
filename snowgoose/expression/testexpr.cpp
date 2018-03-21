@@ -216,17 +216,17 @@ void buildTex(std::ofstream& fout)
 	fout << "test";
 }
 
-int main_(int argc, char** argv) {
+int main(int argc, char** argv) {
    
 	/*std::ofstream fout("testtex.tex");
 	buildTex(fout);*/
 	//system("pdflatex tex/testtex.tex");
-/*
+
     //function value
 	auto expr = Ball<double>();
-    std::cout << "Ball expression: \n" << expr << "\n\n";
-    calcFunc("Ball func", expr, { 20.0, 44.0, 9.0 });
+    	expr.tex_prn(std::cout);
     
+/*    
     //interval estimation of the function
     auto exprInterval = Ball<Interval<double>>();
     calcInterval("Ball interval", exprInterval, { {19, 21 }, {43.0, 45.0}, {8.0, 10.0} });
@@ -239,10 +239,7 @@ int main_(int argc, char** argv) {
     auto exprDerInt = Ball<IntervalDer<double>>();
     calcDerivativeInterval("Ball interval gradient", exprDerInt, { {19, 21 }, {43.0, 45.0}, {8.0, 10.0} });
 */
-    //test ifThen
-    /*auto exprIfThen = TestIfThen<Interval<double>>();
-    exprIfThen.tex_prn(std::cout);*/
-    //calcInterval("Test IfThen", exprIfThen, { {1.0, 3.0 } }); 	
+     	
 }
 
 
@@ -250,10 +247,10 @@ template <class T>
 Expr<T> MyExpr()
 {
 	Expr<T> x;
-	return (x[0] + (x[1] + x[1])) * (x[0] - (x[1] - x[0]));
+	return (x[0] + (x[1] + sqr(x[1]))) * sqr(x[0] - sqr(x[1] - x[0]));
 }
 
-int main(int argc, char** argv) {
+int main_(int argc, char** argv) {
 	
 
 	/*auto brad = Brad<double>();
@@ -262,61 +259,13 @@ int main(int argc, char** argv) {
 	//std::cout << "Leon: \n" << leon << std::endl;
 	//leon.tex_prn(std::cout);
 
-/*	
-	int a[5];
-	a[0] = 2;
-	a[1] = 3;
-	a[2] = 7;
-	a[3] = 8;
-	a[4] = 9;
-	long long ans = 0, ans2 = 0, tmp = 0;
-	int m[9];
-
-	int _a[5];
-	_a[0] = _a[1] = _a[2] = _a[3] = _a[4] = 0;
-
-	for (m[0] = 0; m[0] < 5; m[0]++)
-		for (m[1] = 0; m[1] < 5; m[1]++)
-			for (m[2] = 0; m[2] < 5; m[2]++)
-				for (m[3] = 0; m[3] < 5; m[3]++)
-					for (m[4] = 0; m[4] < 5; m[4]++)
-						for (m[5] = 0; m[5] < 5; m[5]++)
-							for (m[6] = 0; m[6] < 5; m[6]++)
-								for (m[7] = 0; m[7] < 5; m[7]++)
-									for (m[8] = 0; m[8] < 5; m[8]++)
-{
-										if (a[m[0]] <= a[m[1]] <= a[m[2]] <= a[m[3]] <= a[m[4]] <= a[m[5]] <= a[m[6]] <= a[m[7]] <= a[m[8]])
-	{
-		ans++;
-		_a[m[0]]++; _a[m[1]]++; _a[m[2]]++; _a[m[3]]++; _a[m[4]]++; _a[m[5]]++; _a[m[6]]++; _a[m[7]]++; _a[m[8]]++;
-		
-		ans2 += _a[0] > 0 ? 1 : 0;
-		ans2 += _a[1] > 0 ? 1 : 0;
-		ans2 += _a[2] > 0 ? 1 : 0;
-		ans2 += _a[3] > 0 ? 1 : 0;
-		ans2 += _a[4] > 0 ? 1 : 0;
-		if (ans2 <= 4)
-			tmp++;
-		ans2 = 0;
-		_a[0] = _a[1] = _a[2] = _a[3] = _a[4] = 0;
-		
-	}}
-	std::cout << ans << std::endl;
-	std::cout << tmp << std::endl;
-	std::cout << tmp/ans << std::endl;
-	return 0;
 
 
-*/
-
-
-
-
+	/*
 	auto my = MyExpr<double>();
 	std::cout << "TEX PRN" << std::endl;	
-	//std::cout << "Leon: \n" << leon << std::endl;
 	my.tex_prn(std::cout);
-
+	*/
 	/*auto expr = Ackley1<double>(2);	
 	expr.tex_prn(std::cout);*/
 	/*std::cout << "Ackley1: \n" << expr;

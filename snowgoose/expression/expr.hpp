@@ -318,13 +318,12 @@ namespace expression {
 		* @param v is expression
 		* @return output stream
 		*/
-		//T tex_prn(std::ostream & out) const;
+		
 		template <class T2> friend std::ostream& operator<<(std::ostream & out, const Expr<T2>& v);
 		void tex_prn(std::ostream & out) { this->node->tex_prn(out);}
 		friend class Iterator;
 		template <class T3> friend class ExprIndex;
-		//template <class T4> friend std::ostream& Expr<T>::tex_prn(std::ostream & out, const Expr<T>& v);
-		//template <class T2> friend Expr<T2> tex_prn(std::ostream & out, const Expr<T2>& v);
+		
 	private:
 		/**
 		* It is root of tree of the expression
@@ -346,7 +345,6 @@ namespace expression {
 	}
 	template <class T> Expr<T> Expr<T>::operator+(const Expr& value)
 	{
-		std::cout << "ya tut plus" << std::endl;
 		return Expr(ptrNode<T>(new Plus<T>(node, value.node)));
 	}
 	template <class T> Expr<T> operator+(double lv, const Expr<T>& rv)
@@ -361,7 +359,6 @@ namespace expression {
 	}
 	template <class T> Expr<T> Expr<T>::operator-(const Expr<T>& value)
 	{
-		std::cout << "ya tut minus" << std::endl;
 		return Expr<T>(ptrNode<T>(new Minus<T>(node, value.node)));
 	}
 	template <class T> Expr<T> operator-(double lv, const Expr<T>& rv)
@@ -375,7 +372,6 @@ namespace expression {
 	}
 	template <class T> Expr<T> Expr<T>::operator*(const Expr<T>& value)
 	{
-		std::cout << "ya tut mul" << std::endl;
 		return Expr<T>(ptrNode<T>(new Mul<T>(node, value.node)));
 	}
 	template <class T> Expr<T> operator*(double lv, const Expr<T>& rv)
@@ -560,13 +556,6 @@ namespace expression {
 		return node->calc(alg, map_iterator);
 	}
 	
-
-	//werwer
-	/*template <class T> std::ostream tex_prn(std::ostream & out)
-	{
-		out << "test";
-	}
-	*/
 	template <class T> T calcFunc(const Expr<T>& exp, const std::vector<T>& point)
 	{
 		return exp.calc(FuncAlg<T>(point));
@@ -592,10 +581,6 @@ namespace expression {
 		return out << *v.node;
 	}
 	
-	/*template <class T2> friend std::ostream& Expr<T2>::tex_prn(std::ostream & out, const Expr<T2>& v);
-	{
-		//return out << *v.node; 	
-	}*/
 	
 }
 }

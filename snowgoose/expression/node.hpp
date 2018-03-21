@@ -21,7 +21,11 @@
 
 namespace snowgoose {
 namespace expression {
-	static std::stack<int> state;
+	static std::stack<int> state; //0 - plus, 1 - minus, 2 - mul, 3 - sqr
+	const int STATE_PLUS = 0;
+	const int STATE_MINUS = 1;
+	const int STATE_MUL = 2;
+	const int STATE_SQR = 3;
 	template<class T> class Node;
 	template<class T> class ConditionNode;
 	template<typename T> using ptrNode = std::shared_ptr<Node<T>>;
@@ -40,15 +44,9 @@ namespace expression {
 		{ 
 			return v.tex_prn(out); 
 		}
-		//friend std::ostream& operator<<(std::ostream & out, const Node<T>& v, bool state) { v.tex_prn(out);  }
 		virtual std::ostream& prn(std::ostream & out) const = 0;
-		//std::ostream& to_tex(std::ostream & out, const Node<T>& v) {return v.tex_prn(out);}
-		//virtual void tex_prn(std::ostream & out) {}
 		virtual std::ostream& tex_prn(std::ostream & out) const = 0;
-		//static std::stack <int> state; //0 - plus, 1 - minus
-		//static std::vector <int> state; //0 - plus, 1 - minus
         virtual bool IsVar() const {return false;}
-	//virtual void setState(int _state) { state = _state; }
         bool IsVarInTree() const
         {
             if(IsVar()) 
@@ -75,7 +73,6 @@ namespace expression {
 		Var(int i) : index(i) {}
 		T calc(const Algorithm<T> &alg, MapIterator &map_iterator) const { return alg.CreateVar(index); };
 		std::ostream& prn(std::ostream & out) const { return out << "x[" << index << "]"; };
-		//void tex_prn(std::ostream & out) { out << "hELlo"; } // {out << "x_{" << index << "}"; };
 		std::ostream& tex_prn(std::ostream & out) const  {return out << "x_{" << index << "}"; };
         	bool IsVar() const { return true; }
 		int getIndex() { return index; }
@@ -91,7 +88,6 @@ namespace expression {
 		Const(double value) : m_const(value) {}
 		T calc(const Algorithm<T> &alg, MapIterator &map_iterator) const { return alg.CreateConst(m_const); }
 		std::ostream& prn(std::ostream & out) const { return out << m_const; }
-		//void tex_prn(std::ostream & out) { out << m_const; }
 		std::ostream& tex_prn(std::ostream & out) const { return out << m_const; }
 		double getConst() { return m_const; }
 	};
@@ -101,12 +97,11 @@ namespace expression {
 	{
 	public:
 		Plus(const ptrNode<T> &left, const ptrNode<T> &right) : Node<T>({ left, right }) {}
-		//~Plus() {std::cout << "21"; expression::state.pop();}
 		T calc(const Algorithm<T> & alg, MapIterator &map_iterator) const { return alg.Plus(this->m_childs[0]->calc(alg, map_iterator), this->m_childs[1]->calc(alg, map_iterator)); };
 		std::ostream& prn(std::ostream & out) const { return out << "(" << *this->m_childs[0] << " + " << *this->m_childs[1] << ")"; }
 		std::ostream& tex_return(std::ostream& out, int cur) const
 		{
-			if (cur == 1 || cur == 2)
+			if (cur == expression::STATE_MINUS || cur == expression::STATE_MUL)
 				return out << "(" << *this->m_childs[0] << " + " << *this->m_childs[1] << ")";
 			else 
 				return out << *this->m_childs[0] << " + " << *this->m_childs[1];
@@ -119,15 +114,13 @@ namespace expression {
 			{
 				cur = expression::state.top();
 			}	
-			//std::cout << std::endl << "Plus_cur = " << cur << std::endl;
-			expression::state.push(0);
-			//std::cout << "size: " << expression::state.size();
-			//std::cout << "ya tut node plus" << std::endl;
+			expression::state.push(expression::STATE_PLUS);
+		
 			std::ostream& tmp_tex = tex_return(out, cur);
 			expression::state.pop();
 			return tmp_tex;
 		}
-		//void tex_prn(std::ostream & out) { out << "(" << *this->m_childs[0] << " + " << *this->m_childs[1] << ")"; }
+		
 	};
 
 	template <class T>
@@ -135,12 +128,11 @@ namespace expression {
 	{
 	public:
 		Minus(const ptrNode<T> &left, const ptrNode<T> &right) : Node<T>({ left, right }) {}
-		//~Minus() {expression::state.pop();}
 		T calc(const Algorithm<T> & alg, MapIterator &map_iterator) const { return alg.Minus(this->m_childs[0]->calc(alg, map_iterator), this->m_childs[1]->calc(alg, map_iterator)); }
 		std::ostream& prn(std::ostream & out) const { return out << "(" << *this->m_childs[0] << " - " << *this->m_childs[1] << ")"; }
 		std::ostream& tex_return(std::ostream& out, int cur) const
 		{
-			if (cur == 1 || cur == 2)
+			if (cur == expression::STATE_MINUS || cur == expression::STATE_MUL)
 				return out << "(" << *this->m_childs[0] << " - " << *this->m_childs[1] << ")";
 			else 
 				return out << *this->m_childs[0] << " - " << *this->m_childs[1];
@@ -153,10 +145,7 @@ namespace expression {
 			{
 				cur = expression::state.top();
 			}	
-			//std::cout << std::endl << "Minus_cur = " << cur << std::endl;
-			expression::state.push(1);
-			//std::cout << "size: " << expression::state.size();
-			//std::cout << "ya tut node plus" << std::endl;
+			expression::state.push(expression::STATE_MINUS);
 			std::ostream& tmp_tex = tex_return(out, cur);
 			expression::state.pop();
 			return tmp_tex;
@@ -177,16 +166,12 @@ namespace expression {
 		}
 		std::ostream& tex_prn(std::ostream & out) const 
 		{  
-			expression::state.push(2);
+			expression::state.push(expression::STATE_MUL);
 			std::ostream& tmp_tex = tex_return(out);
 			expression::state.pop();
 			return tmp_tex;
 		}
-		/*std::ostream& tex_prn(std::ostream & out) const {
-			 
-			//std::cout  << "ya tut node mul" << std::endl; 
-			return out << *this->m_childs[0] << " \\cdot " << *this->m_childs[1]; 
-		}*/
+		
 		
 	};
 
@@ -307,8 +292,19 @@ namespace expression {
 		Sqr(const ptrNode<T> &node) : Node<T>({ node }) {}
 		T calc(const Algorithm<T> & alg, MapIterator &map_iterator) const { return alg.Sqr(this->m_childs[0]->calc(alg, map_iterator)); };
 		std::ostream& prn(std::ostream & out) const { return out << "sqr(" << *this->m_childs[0] << ")"; }
-		std::ostream& tex_prn(std::ostream & out) const { return out << "{(" << *this->m_childs[0] << ")}^2"; }
-		
+		std::ostream& tex_return(std::ostream& out) const
+		{
+			if (this->m_childs[0]->IsVar())
+				return out << "{" << *this->m_childs[0] << "}^2";
+			else
+				return out << "{(" << *this->m_childs[0] << ")}^2";
+		}
+		std::ostream& tex_prn(std::ostream & out) const 
+		{  
+			expression::state.push(expression::STATE_SQR);
+			std::ostream& tmp_tex = tex_return(out);
+			return tmp_tex;
+		}
 	};
 
 	template <class T>
@@ -584,7 +580,6 @@ namespace expression {
 			}
 			return result;
 		};
-		//\sum_{n=1}^{\infty} 2^{-n}
 		std::ostream& prn(std::ostream & out) const { return out << "loopSum(" << *this->m_childs[0] << ",i)"; }
 		std::ostream& tex_prn(std::ostream & out) const { return out << "\\sum \\limits_{i} (" << *this->m_childs[0] << ")"; }
 	};
